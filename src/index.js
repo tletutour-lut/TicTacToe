@@ -19,7 +19,13 @@ for (var i = 0; i < 5; i++) {
         arr[this.id] = player;
         //logArr(arr);
         if (winner(arr, player)) {
-          alert(player + "wins !");
+          var playertag;
+          if (player === "X") {
+            playertag = 1;
+          } else {
+            playertag = 2;
+          }
+          alert("Player " + playertag + " won !");
           clear();
         }
         if (stalemate()) {
