@@ -25,7 +25,7 @@ for (var i = 0; i < 5; i++) {
           } else {
             playertag = 2;
           }
-          alert("Player " + playertag + " won !");
+          alert("Player " + playertag + " won!");
           clear();
         }
         if (stalemate()) {
